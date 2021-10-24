@@ -7,9 +7,7 @@ This README contains the steps I do to install and configure a fully-functional 
 ---
 ## Create Arch ISO or Use Image
 
-Download ArchISO from <https://archlinux.org/download/> and put on a USB drive with Ventoy or Etcher
-
-If you don't want to build using this script I did create an image @ <https://www.christitus.com/arch-titus>
+Download ArchISO from <https://archlinux.org/download/> and put on a USB drive with Ventoy, Etcher, or Rufus.
 
 ## Boot Arch ISO
 
@@ -17,7 +15,7 @@ From initial Prompt type the following commands:
 
 ```
 pacman -Sy git
-git clone https://github.com/ChrisTitusTech/ArchTitus
+git clone https://github.com/arels2464/ArchTitus
 cd ArchTitus
 ./archtitus.sh
 ```
