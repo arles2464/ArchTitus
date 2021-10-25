@@ -29,11 +29,11 @@ echo "Changing the compression settings for "$nc" cores."
 sudo sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -T $nc -z -)/g' /etc/makepkg.conf
 
 echo "-------------------------------------------------"
-echo "       Setup Language to US and set locale       "
+echo "       Setup Language to AU and set locale       "
 echo "-------------------------------------------------"
-sed -i 's/^#en_AU.UTF-8 UTF-8/en_UAU.UTF-8 UTF-8/' /etc/locale.gen
+sed -i 's/^#en_AU.UTF-8 UTF-8/en_AU.UTF-8 UTF-8/' /etc/locale.gen
 locale-gen
-timedatectl --no-ask-password set-timezone America/Chicago
+timedatectl --no-ask-password set-timezone Australia/Sydney
 timedatectl --no-ask-password set-ntp 1
 localectl --no-ask-password set-locale LANG="en_AU.UTF-8" LC_COLLATE="" LC_TIME="en_AU.UTF-8"
 
@@ -92,6 +92,7 @@ PKGS=(
 'efibootmgr' # EFI boot
 'egl-wayland'
 'exfat-utils'
+'firefox'
 'flex'
 'fuse2'
 'fuse3'
@@ -111,10 +112,8 @@ PKGS=(
 'htop'
 'iptables-nft'
 'jdk-openjdk' # Java 17
-'kate'
 'kvantum-qt5'
 'kde-gtk-config'
-'kitty'
 'konsole'
 'layer-shell-qt'
 'libnewt'
