@@ -35,6 +35,6 @@ sudo wifi-menu
 
 ## Credits
 
-- I got this script from ChrisTitus, I did not make this script, I simply modified it to install in the AU locale, and removed some packages.
+- I got this script from ChrisTitus (https://github.com/ChrisTitus/ArchTitus, I did not make this script, I simply modified it to install in the AU locale, and removed some packages.
 - Original packages script was a post install cleanup script called ArchMatic located here: https://github.com/rickellis/ArchMatic
 - Thank you to all the folks that helped during the creation from YouTube Chat! Here are all those Livestreams showing the creation: <https://www.youtube.com/watch?v=IkMCtkDIhe8&list=PLc7fktTRMBowNaBTsDHlL6X3P3ViX3tYg>
